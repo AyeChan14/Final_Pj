@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Chakra Petch", sans-serif;
+}
+:root {
+  --bg-color: white;
+  --text-color: black;
+  --main-color: orangered;
+}
+.head-text {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-size: 35px;
+}
+.custom-active {
+  background-color: var(--main-color);
+}
+.shadow_custom {
+  box-shadow: 0px 0px 20px 1px var(--main-color);
+}

@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Chakra Petch", sans-serif;
+}
+/* body{
+  background-color: #242A40;
+} */
+:root {
+  --main-color: orangered;
+}
+.head-text {
+  font-family: "Lobster", sans-serif;
+  font-weight: 600;
+  font-size: 45px;
+}
+/* .content-text{
+  font-family: "Chakra Petch", sans-serif;
+} */
+
+/* Nav section started */
+.navbar {
+  position: sticky;
+  top: 0px;
+  z-index: 10000000000000000000000000000000;
+}
+.shadow_custom {
+  box-shadow: 0px -5px 15px 1px var(--main-color);
+}
+.navbar .navbar-brand {
+  color: var(--main-color);
+  font-style: italic;
+  font-size: x-large;
+}
+.navbar-nav .nav-item .nav-link {
+  position: relative;
+  /* transition: 2s ease-in; */
+}
+.navbar-nav .nav-item .active::before {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: var(--main-color);
+  position: absolute;
+  top: 35px;
+  left: 8px;
+}
+.navbar-nav .nav-item .nav-link:hover::before {
+  transition: 0.3s ease-in-out;
+  content: "";
+  width: 40px;
+  height: 2px;
+  background-color: var(--main-color);
+  position: absolute;
+  top: 35px;
+  left: 8px;
+}
+/* .navbar-nav .nav-item .nav-link:hover{
+    /* color: orangered; */
+/* background-color: rgba(248, 50, 5, 0.7);
+    border-radius: 5px;   
+}  */
+.btn-outline-custom {
+  border: 1px solid orange;
+  padding: 5px 20px;
+  transition: 0.3s ease-in;
+}
+.btn-outline-custom:hover {
+  border: none;
+  background-color: rgba(248, 50, 5, 0.7);
+}
+.btn-custom,
+.btn-custom:hover {
+  background-color: var(--main-color);
+}
+
+/* Checkin section started */
+.Check_in {
+  margin-top: -50px;
+  position: relative;
+  z-index: 200;
+}
+@media screen and (max-width: 575px) {
+  .Check_in {
+    margin-top: 25px;
+    padding: 0 35px;
+  }
+}
+
+/* about us section */
+.border-custom {
+  border: 10px solid white;
+  transition: 0.5s ease-in-out;
+}
+.border-custom:hover {
+  border: 10px solid var(--main-color);
+}
+
+/* about us section */
+.container .row .col-md-4 img {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+.container .row .col-md-4 img:hover{
+  transform: scale(1.1); 
+}

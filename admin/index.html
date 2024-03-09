@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="../fontawesome-free-6.5.1-web/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="background-color: rgb(206, 241, 255)">
+    <div class="container-fluid d-flex">
+      <div
+        class="col-md-2 d-md-block"
+        style="border-right: 2px solid gray; padding-right: 7px"
+      >
+        <h1 class="h4 text-center py-3">
+          <img
+            src="../images/pexels-christina-morillo-1181647.jpg"
+            alt=""
+            width="50%"
+            class="d-none d-md-block rounded shadow border mb-2 mx-auto"
+          />
+          <span class="d-md-block mt-2">
+            <span class="text-success">ADMIN</span>
+            <div class="d-none d-md-block">
+              <i class="fa-solid fa-envelope-circle-check mx-3"></i>
+              <i class="fa-solid fa-lock mx-3"></i>
+            </div>
+          </span>
+        </h1>
+        <div class="list-group text-center text-sm-start">
+          <span class="list-group-item disabled d-none d-md-block">
+            <small>CONTROLS</small>
+          </span>
+          <a
+            href=""
+            class="list-group-item list-group-item-action custom-active"
+          >
+            <i class="fa-solid fa-house-chimney me-2"></i>
+            <span class="d-none d-sm-inline">Dashboard</span>
+          </a>
+          <a href="#guests" class="list-group-item list-group-item-action">
+            <i class="fa-solid fa-users me-2"></i>
+            <span class="d-none d-sm-inline">Guests</span>
+            <span
+              class="d-none d-sm-inline budge bg-success text-white rounded-pill float-end"
+              >20</span
+            >
+          </a>
+          <a href="#Booking" class="list-group-item list-group-item-action">
+            <i class="fa-solid fa-hourglass-start me-2"></i>
+            <span class="d-none d-sm-inline">Booking</span>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <i class="fa-solid fa-city me-2"></i>
+            <span class="d-none d-sm-inline">Rooms</span>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <i class="fa-solid fa-power-off me-2"></i>
+            <span class="d-none d-lg-inline">Log_out</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Main Bar -->
+      <main class="col-md-10 p-3">
+        <div style="border-bottom: 2px solid gray; padding-bottom: 20px">
+          <form class="search mt-1 d-flex" style="width: 20rem">
+            <input
+              class="form-control me-2 p-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-black" type="submit">
+              <i
+                class="text text-primary fa-solid fa-magnifying-glass color-primary"
+              ></i>
+            </button>
+          </form>
+        </div>
+
+        <div class="row">
+          <span class="head-text mt-2 text-primary">Hi , Welcome Back!</span>
+          <span class="head-text mb-4 m">Dashboard</span>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card shadow">
+              <div class="card-content p-3">
+                <div>
+                  <i
+                    class="fa-solid fa-clipboard"
+                    style="color: purple; font-size: 35px"
+                  ></i>
+                </div>
+                <div class="my-2">
+                  <h5 class="my-2">Total Booking</h5>
+                  <span>3568</span>
+                </div>
+                <div
+                  class="progress"
+                  role="progressbar"
+                  aria-label="Warning example"
+                  aria-valuenow="75"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div
+                    class="progress-bar"
+                    style="width: 75%; background-color: purple"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-content p-3">
+                <div>
+                  <i
+                    class="fa-solid fa-bed text-warning"
+                    style="font-size: 35px"
+                  ></i>
+                </div>
+                <div class="my-2">
+                  <h5 class="my-2">Rooms Available</h5>
+                  <span>546</span>
+                </div>
+                <div
+                  class="progress"
+                  role="progressbar"
+                  aria-label="Warning example"
+                  aria-valuenow="75"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div
+                    class="progress-bar"
+                    style="width: 50%; background-color: orange"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-content p-3">
+                <div>
+                  <i
+                    class="fa-solid fa-user-group"
+                    style="font-size: 35px; color: rgb(2, 198, 2)"
+                  ></i>
+                </div>
+                <div class="my-2">
+                  <h5 class="my-2">New Guests</h5>
+                  <span>1578</span>
+                </div>
+                <div
+                  class="progress"
+                  role="progressbar"
+                  aria-label="Warning example"
+                  aria-valuenow="75"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div
+                    class="progress-bar"
+                    style="width: 87%; background-color: rgb(2, 198, 2)"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-content p-3">
+                <div>
+                  <i
+                    class="fa-solid fa-indian-rupee-sign"
+                    style="font-size: 35px; color: skyblue"
+                  ></i>
+                </div>
+                <div class="my-2">
+                  <h5 class="my-2">Total Revenue</h5>
+                  <span>22897</span>
+                </div>
+                <div
+                  class="progress"
+                  role="progressbar"
+                  aria-label="Warning example"
+                  aria-valuenow="75"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div
+                    class="progress-bar"
+                    style="width: 95%; background-color: skyblue"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-lg-1"></div>
+          <div class="col-lg-10">
+            <canvas id="LineChart"></canvas>
+          </div>
+          <div class="col-lg-1"></div>
+        </div>
+
+        <div class="row mt-5" id="guests">
+          <!-- Table-->
+          <table class="table table-striped table-hover px-2">
+            <thead>
+              <tr class="px-3" style="width: 6rem">
+                <th class="px-1 w-20px"></th>
+                <th class="col g-1">Name</th>
+                <th class="col">Gender</th>
+                <th class="col">Mobile</th>
+
+                <th class="col">Email</th>
+                <th class="col">Arrive</th>
+                <th class="col">Depart</th>
+                <th class="col">Room Type</th>
+                <th class="col">Payment</th>
+                <th class="col">Action</th>
+              </tr>
+            </thead>
+            <tbody class="table-group-divider text-primary">
+              <tr class="">
+                <th scope="row">1</th>
+                <td>Rose'</td>
+                <td><i class="fa-solid fa-venus text text-danger"></i></td>
+                <td class=""><small>09-12345678</small></td>
+                <td>@mdo</td>
+                <td>24/2/24</td>
+                <td>@mdo</td>
+                <td><i class="fw-bold">Villa</i></td>
+                <td class="">
+                  <button class="badge text-bg-secondary btn">Unpaid</button>
+                </td>
+                <td class="text text-succcess">Paid</td>
+              </tr>
+              <tr class="w-2">
+                <th scope="row">2</th>
+                <td>Herry</td>
+                <td><i class="fa-solid fa-mars text"></i></td>
+                <td><small>09-12356789</small></td>
+                <td>@example1</td>
+                <td>23/2/24</td>
+                <td>@fat</td>
+                <td><i class="fw-bold">Villa</i></td>
+                <td class="">
+                  <button class="badge text-bg-secondary btn">Paid</button>
+                </td>
+                <td>@fat</td>
+              </tr>
+              <!-- Deo -->
+              <tr>
+                <th scope="row">3</th>
+                <td class="">Deo</td>
+                <td class=""><i class="fa-solid fa-mars text"></i></td>
+                <td><small>09-12356798</small></td>
+                <td>@example.</td>
+                <td>@twitter</td>
+                <td>@twitter</td>
+                <td class=""><i class="fw-bold">Family Room</i></td>
+                <td class="">
+                  <button class="badge text-bg-secondary btn">Paid</button>
+                </td>
+                <td>@twitter</td>
+              </tr>
+              <!-- somi -->
+              <tr>
+                <th scope="row">4</th>
+                <td colspan="">Somi</td>
+                <td><i class="fa-solid fa-venus text text-danger"></i></td>
+                <td colspan=""><small>09-12356889</small></td>
+                <td>@twitter</td>
+                <td class="fw-bold">26/2/24</td>
+                <td class="fw-bold">1/3/24</td>
+                <td colspan=""><i class="fw-bold">Larry</i></td>
+                <td class="">
+                  <button class="badge text-bg-secondary btn">Paid</button>
+                </td>
+                <td class=""></td>
+                <td class=""></td>
+              </tr>
+              <tr class="p-2">
+                <th>5</th>
+                <td>Emily</td>
+                <td><i class="fa-solid fa-venus text text-danger"></i></td>
+                <td class="text-succcess">
+                  <small class="text text-succcess">09-12366789</small>
+                </td>
+                <td>@123</td>
+                <td class="fw-bold">15/2/24</td>
+                <td class="fw-bold">1/3/24</td>
+                <td><i class="fw-bold">Deluxe </i></td>
+                <td class="">
+                  <button class="badge text-bg-secondary btn">Unpaid</button>
+                </td>
+                <td>@twitter</td>
+              </tr>
+              <tr>
+                <th scope="">6</th>
+                <td colspan="">Sony</td>
+                <td><i class="fa-solid fa-venus text text-danger"></i></td>
+                <td class="text-succcess">
+                  <small class="text text-succcess">09-13366789</small>
+                </td>
+                <td>@123</td>
+                <td class="fw-bold">1/3/24</td>
+                <td class="fw-bold">22/3/24</td>
+                <td><i class="fw-bold">Villa</i></td>
+                <td class="">
+                  <button class="badge text-bg-secondary btn">Unpaid</button>
+                </td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="row my-5" id="Booking">
+          <div class="col-lg-4">
+            <div class="card shadow">
+              <div class="card-content">
+                <div class="d-flex justify-content-between mx-3 mb-5">
+                  <span class="mt-2 mb-4 fw-bold fs-6">Daily Booking </span>
+                  <i class="fa-solid fa-ellipsis-vertical mt-2 me-2"></i>
+                </div>
+                <div
+                  class="d-flex align-items-center justify-content-center"
+                  style="font-size: 30px"
+                >
+                  <div>
+                    <i class="fa-solid fa-sack-dollar me-2"></i> 1750
+                    <i class="fa-solid fa-up-long text-primary ms-2"></i>
+                    <p
+                      style="
+                        font-size: 20px;
+                        font-weight: 200;
+                        text-align: center;
+                      "
+                    >
+                      Rooms Revenue
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="d-flex align-items-center justify-content-center"
+                  style="font-size: 35px"
+                >
+                  <div>
+                    <i class="fa-solid fa-sack-dollar me-2"></i> 306
+                    <i class="fa-solid fa-down-long text-primary ms-2"></i>
+                    <p
+                      style="
+                        font-size: 20px;
+                        font-weight: 200;
+                        text-align: center;
+                      "
+                    >
+                      Items & Services
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card shadow">
+              <div class="card-content">
+                <div class="d-flex justify-content-between mx-3">
+                  <span class="mt-2 mb-3 fw-bold fs-6">Occupancy</span>
+                  <i class="fa-solid fa-ellipsis-vertical mt-2 me-2"></i>
+                </div>
+                <div style="height: 250px; width: 250px">
+                  <canvas id="myChart" class="ms-5"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card shadow" style="width: 100%; height: 300px">
+              <div class="card-content">
+                <div class="d-flex justify-content-between mx-3">
+                  <span class="mt-2 mb-4 fw-bold fs-6">Transations </span>
+                  <i class="fa-solid fa-ellipsis-vertical mt-2 me-2"></i>
+                </div>
+                <div class="p-2 d-flex">
+                  <span class="p-3 rounded" style="background-color: rgb(255, 157, 157)"
+                    ><i class="fa-solid fa-chart-pie" style="font-size: 25px; color: rgb(233, 32, 32)"></i></span>
+                  <div class="ms-2"><span>Transfer</span><br><span>Refund</span></div>
+                  <div style="margin-left: 90px;">+$637.91 <span class="text-secondary">USD</span></div>
+                </div>
+                <div class="p-2 d-flex">
+                  <span class="p-3 rounded" style="background-color: rgb(255, 157, 157)"
+                    ><i
+                      class="fa-brands fa-paypal"
+                      style="font-size: 37px; color: rgb(233, 32, 32)"
+                    ></i
+                  ></span>
+                  <div class="ms-2"><span>Paypal</span><br><span>Send Money</span></div>
+                  <div class="ms-5 ps-2">+$2030.33 <span class="text-secondary">USD</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4 p-3" id="Booking">
+          <h5 class="head-text">Booking Details</h5>
+          <table class="table table-striped table-hover">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Check-in</th>
+                <th scope="col">Check-out</th>
+                <th scope="col">Status</th>
+                <th scope="col">Phone</th>
+                <th scope="col">Room-type</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>12-08-2019</td>
+                <td>15-08-2019</td>
+                <td><span class="badge text-bg-secondary">Paid</span></td>
+                <td>+959254878965</td>
+                <td>Single</td>
+                <td>
+                  <span class="me-3"
+                    ><i class="fa-regular fa-pen-to-square"></i></span
+                  ><span><i class="fa-regular fa-trash-can"></i></span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jame</td>
+                <td>13-08-2019</td>
+                <td>18-08-2019</td>
+                <td><span class="badge text-bg-secondary">Paid</span></td>
+                <td>+959753698555</td>
+                <td>Double</td>
+                <td>
+                  <span class="me-3"
+                    ><i class="fa-regular fa-pen-to-square"></i></span
+                  ><span><i class="fa-regular fa-trash-can"></i></span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Jame</td>
+                <td>13-08-2019</td>
+                <td>18-08-2019</td>
+                <td><span class="badge text-bg-secondary">Unpaid</span></td>
+                <td>+959753698555</td>
+                <td>Double</td>
+                <td>
+                  <span class="me-3"
+                    ><i class="fa-regular fa-pen-to-square"></i></span
+                  ><span><i class="fa-regular fa-trash-can"></i></span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Jame</td>
+                <td>13-08-2019</td>
+                <td>18-08-2019</td>
+                <td><span class="badge text-bg-secondary">Paid</span></td>
+                <td>+959753698555</td>
+                <td>Double</td>
+                <td>
+                  <span class="me-3"
+                    ><i class="fa-regular fa-pen-to-square"></i></span
+                  ><span><i class="fa-regular fa-trash-can"></i></span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>Jame</td>
+                <td>13-08-2019</td>
+                <td>18-08-2019</td>
+                <td><span class="badge text-bg-secondary">Unpaid</span></td>
+                <td>+959753698555</td>
+                <td>Double</td>
+                <td>
+                  <span class="me-3"
+                    ><i class="fa-regular fa-pen-to-square"></i></span
+                  ><span><i class="fa-regular fa-trash-can"></i></span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h6 class="text-center bg-dark text-white p-3 m-0">
+          CopyRight!&copy;2024 . All Right Reserved
+        </h6>
+      </main>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../fontawesome-free-6.5.1-web/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+
+    <script>
+      const ctx = document.getElementById("myChart");
+      new Chart(ctx, {
+        type: "pie",
+        data: {
+          labels: ["Yangon", "Mandalay", "PyinOoLwin"],
+          datasets: [
+            {
+              label: "My occupancy",
+              data: [300, 50, 100],
+              backgroundColor: [
+                "rgb(255, 99, 132)",
+                "rgb(54, 162, 235)",
+                "rgb(255, 205, 86)",
+              ],
+              hoverOffset: 4,
+            },
+          ],
+        },
+      });
+
+      const LineChart = document.getElementById("LineChart");
+      new Chart(LineChart, {
+        type: "line",
+        data: {
+          labels: [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+          ],
+          datasets: [
+            {
+              label: "My First Dataset",
+              data: [65, 59, 80, 81, 56, 55, 40],
+              fill: false,
+              borderColor: "rgb(75, 192, 192)",
+              tension: 0.1,
+            },
+          ],
+        },
+      });
+    </script>
+  </body>
+</html>

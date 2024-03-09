@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azuma Haven Hotel</title>
+    <link rel="shortcut icon" href="images/gallary/favicon.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.min.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lobster&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7swiper-bundel.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow_custom px-lg-4 py-lg-2">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Azuma Heaven_Hotel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynav" aria-controls="navbarNav">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynav" style="padding-left: 100px;">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link active text-dark" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-dark" href="room.html">Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-dark" href="facilities.html">Facilities</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-dark" href="contact.html">Contact_Us</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-dark" href="about-us.html">About_Us</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-dark" href="accessibility.html">Accessibility</a>
+                    </li>                
+                </ul>
+            </div>
+            <button class="btn btn-sm btn-outline-custom me-2 text-dark d-none d-sm-inline" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+            <button class="btn btn-sm btn-outline-custom me-2 text-dark d-none d-sm-inline" type="button" data-bs-toggle="modal" data-bs-target="#registerModal">Register</button>
+        </div>
+
+        <!-- Modal boxes -->
+        <div class="modal" id="loginModal" tabindex="-1" >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header shadow_custom">
+                    <i class="fa-solid fa-user me-3" style="font-size: 30px;" ></i>
+                    <h5 class="modal-title">User Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <label for="" class="form-label">Email</label>
+                    <input type="email" name="" id="" class="form-control my-2 mx-auto">
+                    <label for="" class="form-label">Password</label>
+                    <input type="password" name="" id="" class="form-control my-2 mx-auto">
+                </div>
+                <div class="modal-footer d-flex justify-content-between">
+                    <button type="button" class="btn btn-custom" data-bs-dismiss="modal">Login</button>
+                    <a href="" class="nav-link"> Forget Password?</a>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="registerModal" tabindex="-1" >
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header shadow_custom">
+                        <i class="fa-solid fa-address-card me-3 " style="font-size: 30px;"></i>
+                        <h5 class="modal-title">Registeration</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">                    
+                        <span class="badge rounded-pill bg-light text-dark mb-3 text-wrap lh-base">
+                            Note: Your detail must match with your ID (NIC card, passport, driven license, etc.)
+                            that will be required during check-in.
+                        </span>
+                        <form action="">
+                            <div class="container-fluid">
+                                <div class="row">
+                                <div class="col-md-6 ps-0 mb-3">
+                                <label class="form-label">Name</label>
+                                    <input type="text" class="form-control shadow_none">
+                                </div>
+                                <div class="col-md-6 p-0 mb-3">
+                                <label class="form-label">Email</label>
+                                    <input type="email" class="form-control shadow-none">
+                                </div>
+                                <div class="col-md-6 ps-0 mb-3">
+                                <label class="form-label">Phone Number</label>
+                                    <input type="number" class="form-control shadow-none">
+                                </div>
+                                <div class="col-md-6 p-0 mb-3">
+                                <label class="form-label">Picture</label>
+                                    <input type="file" class="form-control shadow-none">
+                                </div>
+                                <div class="col-md-12 p-0 mb-3">
+                                <label class="form-label">Adddress</label>
+                                    <textarea class="form-control shadow-none" rows="1"></textarea>
+                                    </div>
+                                    <div class="col-md-6 ps-0 mb-3">
+                                <label class="form-label">Pincode</label>
+                                    <input type="number" class="form-control shadow-none">
+                                </div>
+                                <div class="col-md-6 p-0 mb-3">
+                                <label class="form-label">Date of birth</label>
+                                    <input type="date" class="form-control shadow-none">
+                                </div>
+                                <div class="col-md-6 ps-0 mb-3">
+                                <label class="form-label">Password</label>
+                                    <input type="password" class="form-control shadow-none">
+                                </div>
+                                <div class="col-md-6 p-0 mb-3">
+                                <label class="form-label">Comfirm Password</label>
+                                    <input type="password" class="form-control shadow-none">
+                                </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-custom ms-0 my-3" data-bs-dismiss="modal">Register</button>
+                        </form>
+                    </div>                
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    
+    <div class="contact-area ">
+        <div class="container">
+            <div class="row ms-3">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="section-title mt-5 " style="text-align: center; padding: 25px;">
+                        <h2 class="mx-5 mb-5 fw-bold text-" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Contact<span class="text-warning" > Us</span></h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <div class="contact-form bg-white " style="padding:  ;">
+                            <form>
+                                <div class="mb-3">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="floatingInput" placeholder="Username">
+                                        <label for="floatingInput">Username</label>
+                                      </div>
+                                </div>     
+                                <div class="mb-3">
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput">Email address</label>
+                                      </div>
+                                </div>     
+                                <div class="mb-3">
+                                    <div class="form-floating">
+                                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                        <label for="floatingPassword">Password</label>
+                                      </div>
+                                </div>     
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                                    <label for="floatingTextarea">Comments</label>
+                                  </div>     
+                                <div class="mb-3 form-check">
+                                  <input type="checkbox" class="form-check-input  mt-3" id="exampleCheck1">
+                                  <label class="form-check-label mt-3" for="exampleCheck1">Check me out</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary mt-2">Submit</button>
+                              </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <div class="map-area">
+                             <iframe class="w-100 rounded " src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d35204.33007304113!2d96.09286521156618!3d21.957630287880068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smm!4v1709521493146!5m2!1sen!2smm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- footer -->
+    <div class="container-fluid mt-5 bg-white">
+        <div class="row shadow">
+            <div class="col-lg-4">
+                <h5 class=" mt-5 p-4 fw-bold">Azuma Heaven Hotel</h5>
+                <p class="ps-4">Our Azuam Hotel is an international upscale hotel in Mandalay, with easy access to the city's commercial hubs and tourist attractions. It features 358 rooms and suites, restaurants offering international, regional and local cuisine, bars, 650 m² ballroom, meeting spaces, swimming pool and spa</p>
+            </div>
+            <div class="col-lg-4">
+                <h5 class=" mt-5 ps-5 pt-4 pb-4 fw-bold">Quick Link</h5>
+                <div class="ps-5">
+                    <a href="#" class="d-inline-block mb-2 text-decoration-none  text-dark">Home</a><br>
+                    <a href="#" class="d-inline-block mb-2 text-decoration-none  text-dark">Facilities</a><br>
+                    <a href="#" class="d-inline-block mb-2 text-decoration-none  text-dark">Rooms</a><br>
+                    <a href="#" class="d-inline-block mb-2 text-decoration-none  text-dark">Contact us</a><br>
+                    <a href="#" class="d-inline-block mb-2 text-decoration-none  text-dark">About</a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                 <h5 class=" mt-5 p-4 fw-bold">Follow Us</h5>
+                    <div class="ps-4">
+                        <a href="#" class="d-inline-block mb-3">
+                        <span class="badge bg-light text-dark fs-6 p-2">
+                        <i class="fa-brands fa-twitter me-2"></i> Twitter
+                        </span>
+                        </a>
+                        <br>
+                        <a href="#" class="d-inline-block mb-3">
+                            <span class="badge bg-light text-dark fs-6 p-2">
+                            <i class="fa-brands fa-facebook me-2"></i> Facebook
+                            </span>
+                        </a>
+                        <br>
+                        <a href="#" class="d-inline-block">
+                            <span class="badge bg-light text-dark fs-6 p-2">
+                            <i class="fa-brands fa-square-instagram me-2"></i> Instagram
+                            </span>
+                        </a>
+                    </div>
+            </div>
+        </div>
+        <h6 class="text-center bg-dark text-white p-3 m-0 ">CopyRight!&copy;2024 . All Right Reserved</h6>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../fontawesome-free-6.5.1-web/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+</body>
+</html>    
+    
