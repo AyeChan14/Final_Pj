@@ -52,27 +52,23 @@
             class="list-group-item list-group-item-action custom-active"
           >
             <i class="fa-solid fa-house-chimney me-2"></i>
-            <span class="d-none d-sm-inline">Dashboard</span>
+            <span class="d-none d-lg-inline">Dashboard</span>
           </a>
           <a href="#guests" class="list-group-item list-group-item-action">
             <i class="fa-solid fa-users me-2"></i>
-            <span class="d-none d-sm-inline">Guests</span>
+            <span class="d-none d-lg-inline">Guests</span>
             <span
-              class="d-none d-sm-inline budge bg-success text-white rounded-pill float-end"
+              class="d-none d-md-inline budge bg-success text-white rounded-pill float-end"
               >20</span
             >
           </a>
           <a href="#Booking" class="list-group-item list-group-item-action">
             <i class="fa-solid fa-hourglass-start me-2"></i>
-            <span class="d-none d-sm-inline">Booking</span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action">
-            <i class="fa-solid fa-city me-2"></i>
-            <span class="d-none d-sm-inline">Rooms</span>
+            <span class="d-none d-lg-inline ">Booking</span>
           </a>
           <a href="#" class="list-group-item list-group-item-action">
             <i class="fa-solid fa-power-off me-2"></i>
-            <span class="d-none d-lg-inline">Log_out</span>
+            <span class="d-none d-lg-inline">Log out</span>
           </a>
         </div>
       </div>
@@ -80,7 +76,8 @@
       <!-- Right Main Bar -->
       <main class="col-md-10 p-3">
         <div style="border-bottom: 2px solid gray; padding-bottom: 20px">
-          <form class="search mt-1 d-flex" style="width: 20rem">
+          <div class="d-flex justify-content-end">
+            <form class="search mt-1 d-flex me-0" style="width: 20rem">
             <input
               class="form-control me-2 p-2"
               type="search"
@@ -93,6 +90,8 @@
               ></i>
             </button>
           </form>
+          </div>
+          
         </div>
 
         <div class="row">
@@ -219,6 +218,7 @@
           </div>
         </div>
 
+
         <div class="row mt-5">
           <div class="col-lg-1"></div>
           <div class="col-lg-10">
@@ -228,6 +228,7 @@
         </div>
 
         <div class="row mt-5" id="guests">
+          <h5 class="head-text py-3">Guests Infomations</h5>
           <!-- Table-->
           <table class="table table-striped table-hover px-2">
             <thead>
@@ -245,34 +246,38 @@
                 <th class="col">Action</th>
               </tr>
             </thead>
-            <tbody class="table-group-divider text-primary">
+             <tbody class="table-group-divider text-primary">
               <tr class="">
                 <th scope="row">1</th>
                 <td>Rose'</td>
                 <td><i class="fa-solid fa-venus text text-danger"></i></td>
                 <td class=""><small>09-12345678</small></td>
-                <td>@mdo</td>
-                <td>24/2/24</td>
-                <td>@mdo</td>
+                <td class=>@Rose</td>
+                <td class="fw-bold">12/2/24</td>
+                <td  class="fw-bold">24/2/24</td>
                 <td><i class="fw-bold">Villa</i></td>
                 <td class="">
                   <button class="badge text-bg-secondary btn">Unpaid</button>
                 </td>
-                <td class="text text-succcess">Paid</td>
+                <td class=><span class="me-3"
+                  ><i class="fa-regular fa-pen-to-square"></i></span
+                ><span><i class="fa-regular fa-trash-can"></i></span></td>
               </tr>
               <tr class="w-2">
                 <th scope="row">2</th>
                 <td>Herry</td>
                 <td><i class="fa-solid fa-mars text"></i></td>
                 <td><small>09-12356789</small></td>
-                <td>@example1</td>
-                <td>23/2/24</td>
-                <td>@fat</td>
+                <td>@herrry</td>
+                <td class="fw-bold">23/2/24</td>
+                <td class="fw-bold">20/3/24</td>
                 <td><i class="fw-bold">Villa</i></td>
                 <td class="">
                   <button class="badge text-bg-secondary btn">Paid</button>
                 </td>
-                <td>@fat</td>
+                <td><span class="me-3"
+                  ><i class="fa-regular fa-pen-to-square"></i></span
+                ><span><i class="fa-regular fa-trash-can"></i></span></td>
               </tr>
               <!-- Deo -->
               <tr>
@@ -280,14 +285,16 @@
                 <td class="">Deo</td>
                 <td class=""><i class="fa-solid fa-mars text"></i></td>
                 <td><small>09-12356798</small></td>
-                <td>@example.</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
+                <td>@deo</td>
+                <td class="fw-bold">11/1/24</td>
+                <td class="fw-bold">10/2/24</td>
                 <td class=""><i class="fw-bold">Family Room</i></td>
                 <td class="">
                   <button class="badge text-bg-secondary btn">Paid</button>
                 </td>
-                <td>@twitter</td>
+                <td><span class="me-3"
+                  ><i class="fa-regular fa-pen-to-square"></i></span
+                ><span><i class="fa-regular fa-trash-can"></i></span></td>
               </tr>
               <!-- somi -->
               <tr>
@@ -295,15 +302,18 @@
                 <td colspan="">Somi</td>
                 <td><i class="fa-solid fa-venus text text-danger"></i></td>
                 <td colspan=""><small>09-12356889</small></td>
-                <td>@twitter</td>
+                <td>@somi</td>
                 <td class="fw-bold">26/2/24</td>
                 <td class="fw-bold">1/3/24</td>
                 <td colspan=""><i class="fw-bold">Larry</i></td>
                 <td class="">
                   <button class="badge text-bg-secondary btn">Paid</button>
                 </td>
-                <td class=""></td>
-                <td class=""></td>
+                <td class="">
+                  <span class="me-3"
+                    ><i class="fa-regular fa-pen-to-square"></i></span
+                  ><span><i class="fa-regular fa-trash-can"></i></span>
+                </td>
               </tr>
               <tr class="p-2">
                 <th>5</th>
@@ -312,14 +322,18 @@
                 <td class="text-succcess">
                   <small class="text text-succcess">09-12366789</small>
                 </td>
-                <td>@123</td>
+                <td>@emily</td>
                 <td class="fw-bold">15/2/24</td>
                 <td class="fw-bold">1/3/24</td>
                 <td><i class="fw-bold">Deluxe </i></td>
                 <td class="">
                   <button class="badge text-bg-secondary btn">Unpaid</button>
                 </td>
-                <td>@twitter</td>
+                <td>
+                  <span class="me-3"
+                    ><i class="fa-regular fa-pen-to-square"></i></span
+                  ><span><i class="fa-regular fa-trash-can"></i></span>
+                </td>
               </tr>
               <tr>
                 <th scope="">6</th>
@@ -328,14 +342,18 @@
                 <td class="text-succcess">
                   <small class="text text-succcess">09-13366789</small>
                 </td>
-                <td>@123</td>
+                <td>@sony</td>
                 <td class="fw-bold">1/3/24</td>
                 <td class="fw-bold">22/3/24</td>
                 <td><i class="fw-bold">Villa</i></td>
                 <td class="">
                   <button class="badge text-bg-secondary btn">Unpaid</button>
                 </td>
-                <td>@twitter</td>
+                <td>
+                  <span class="me-3"
+                    ><i class="fa-regular fa-pen-to-square"></i></span
+                  ><span><i class="fa-regular fa-trash-can"></i></span>
+                </td>
               </tr>
             </tbody>
           </table>
@@ -344,9 +362,9 @@
         <div class="row my-5" id="Booking">
           <div class="col-lg-4">
             <div class="card shadow">
-              <div class="card-content">
-                <div class="d-flex justify-content-between mx-3 mb-5">
-                  <span class="mt-2 mb-4 fw-bold fs-6">Daily Booking </span>
+              <div class="card-content " style="height: 300px; width: 100%">
+                <div class="d-flex justify-content-between mx-3 mb-5 ">
+                  <span class="mt-2 fw-bold fs-6">Daily Booking </span>
                   <i class="fa-solid fa-ellipsis-vertical mt-2 me-2"></i>
                 </div>
                 <div
@@ -520,6 +538,7 @@
             </tbody>
           </table>
         </div>
+
         <h6 class="text-center bg-dark text-white p-3 m-0">
           CopyRight!&copy;2024 . All Right Reserved
         </h6>
@@ -570,7 +589,7 @@
           ],
           datasets: [
             {
-              label: "My First Dataset",
+              label: "Yearly Net Profit",
               data: [65, 59, 80, 81, 56, 55, 40],
               fill: false,
               borderColor: "rgb(75, 192, 192)",

@@ -37,30 +37,24 @@
   position: relative;
   /* transition: 2s ease-in; */
 }
-.navbar-nav .nav-item .active::before {
-  content: "";
-  width: 30px;
-  height: 2px;
-  background-color: var(--main-color);
+.navbar-nav .nav-item ::before {
+
   position: absolute;
-  top: 35px;
-  left: 8px;
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 90%;
+  height: 2px;
+  background: var(--main-color);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 1s;
 }
 .navbar-nav .nav-item .nav-link:hover::before {
-  transition: 0.3s ease-in-out;
-  content: "";
-  width: 40px;
-  height: 2px;
-  background-color: var(--main-color);
-  position: absolute;
-  top: 35px;
-  left: 8px;
+  transform: scaleX(1);
+  transform-origin: left;
 }
-/* .navbar-nav .nav-item .nav-link:hover{
-    /* color: orangered; */
-/* background-color: rgba(248, 50, 5, 0.7);
-    border-radius: 5px;   
-}  */
+
 .btn-outline-custom {
   border: 1px solid orange;
   padding: 5px 20px;
